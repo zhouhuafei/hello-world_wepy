@@ -1,9 +1,1 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function (value) {
-  return typeof value === 'string';
-};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=function(e){return"string"==typeof e};

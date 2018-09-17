@@ -1,9 +1,1 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function (value) {
-  return Array.isArray(value);
-};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=function(e){return Array.isArray(e)};

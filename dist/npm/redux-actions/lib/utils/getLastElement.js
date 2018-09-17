@@ -1,9 +1,1 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function (array) {
-  return array[array.length - 1];
-};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=function(e){return e[e.length-1]};
