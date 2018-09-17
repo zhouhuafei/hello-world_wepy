@@ -2,8 +2,9 @@ node_modules
 .svn
 .idea
 .vscode
-.sass-cache
 .DS_Store
+.wepycache
+.sass-cache
 .git-credentials
 *.suo
 *.ntvs*
@@ -25,4 +26,3 @@ test/e2e/reports
 static-cache-wrap/static-cache/admin/gallery
 static-cache-wrap/static-cache/phone/gallery
 static-cache-wrap/static-cache/pc/gallery
-.wepycache
