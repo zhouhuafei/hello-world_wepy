@@ -1,61 +1,63 @@
 
-  <view class="container">
-    <view class="userinfo" bindtap="handleViewTap">
-      <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
-      <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
-    </view>
+    <view class="container">
+        <view class="userinfo" bindtap="handleViewTap">
+            <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
+            <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
+        </view>
 
-    
+        
   <view class="panel">
     <view class="title">测试数据绑定</view>
     
-      
+            
 
-      <text class="info">{{normalTitle}}</text>
-      <text class="info">{{setTimeoutTitle}}</text>
-      <text class="info">{{mixin}}</text>
-      <text class="info">{{mynum}}</text>
-      <text class="info">{{now}}</text>
-      <text class="info">{{num}}</text>
-      <text class="info">{{asyncNum}}</text>
-      <text class="info">{{sumNum}}</text>
-      <button bindtap="plus" size="mini" data-wpyplus-a="a">  +  </button>
-    
+            <text class="info">{{normalTitle}}</text>
+            <text class="info">{{setTimeoutTitle}}</text>
+            <text class="info">{{mixin}}</text>
+            <text class="info">{{mynum}}</text>
+            <text class="info">{{now}}</text>
+            <text class="info">{{num}}</text>
+            <text class="info">{{asyncNum}}</text>
+            <text class="info">{{sumNum}}</text>
+            <button bindtap="plus" size="mini" data-wpyplus-a="a"> +</button>
+        
   </view>
 
 
-    
+        
   <view class="panel">
     <view class="title">其它测试</view>
     
-      
-      <button bindtap="toast" size="mini">第三方组件</button>
-      <button bindtap="communicate" size="mini">组件通信</button>
-      <button bindtap="tap" size="mini">混合TAP事件</button>
-    
+            
+            <button bindtap="toast" size="mini">第三方组件</button>
+            <button bindtap="communicate" size="mini">组件通信</button>
+            <button bindtap="tap" size="mini">混合TAP事件</button>
+        
   </view>
 
 
-    
+        
   <view class="panel">
     <view class="title">测试并发网络请求</view>
     
-      
-      <view>返回结果: <text>{{netrst}}</text></view>
-      <button bindtap="request" size="mini"> 点我发起10个请求 </button>
-    
+            
+            <view>返回结果:
+                <text>{{netrst}}</text>
+            </view>
+            <button bindtap="request" size="mini"> 点我发起10个请求</button>
+        
   </view>
 
 
-    
+        
   <view class="panel">
     <view class="title">测试组件</view>
     
-      
+            
 
-      <text class="testcounter">计数组件1: </text>
-      <view class="counterview">
-        
+            <text class="testcounter">计数组件1:</text>
+            <view class="counterview">
+                
   <view class="counter {{$counter1$style}}">
     <button bindtap="$counter1$plus" size="mini">  +  </button>
     <button bindtap="$counter1$minus" size="mini">  -  </button>
@@ -67,12 +69,12 @@
     <text class="count"> {{$counter1$asyncNum}} </text>
   </view>
 
-      </view>
+            </view>
 
-      <text class="testcounter">计数组件2: </text>
+            <text class="testcounter">计数组件2:</text>
 
-      <view class="counterview">
-        
+            <view class="counterview">
+                
   <view class="counter {{$counter2$style}}">
     <button bindtap="$counter2$plus" size="mini">  +  </button>
     <button bindtap="$counter2$minus" size="mini">  -  </button>
@@ -84,18 +86,18 @@
     <text class="count"> {{$counter2$asyncNum}} </text>
   </view>
 
-      </view>
-    
+            </view>
+        
   </view>
 
 
-    
+        
   <view class="panel">
     <view class="title">测试组件Repeat</view>
     
-      
-      <block for="" index="index" item="item" key="key">
-        
+            
+            <block for="" index="index" item="item" key="key">
+                
   <view class="group">
     <text class="id">{{item.id}}. </text>
     <text class="name" bindtap="$group$tap" data-com-index="{{undefined}}">{{item.name}}</text>
@@ -111,17 +113,17 @@
     </view>
   </view>
 
-      </block>
-    
+            </block>
+        
   </view>
 
 
-    
+        
   <view class="panel">
     <view class="title">测试列表</view>
     
-      
-      
+            
+            
   <view class="list">
   <view>
     <button bindtap="$list$add" size="mini">添加列表</button>
@@ -133,11 +135,11 @@
     </block>
   </view>
 
-    
+        
   </view>
 
 
-    
+        
     <view class="wetoast {{$toast$reveal ? 'wetoast_show' : ''}}">
         <view class="wetoast__mask"/>
         <view class="wetoast__bd" animation="{{$toast$animationData}}">
@@ -152,4 +154,4 @@
         </view>
     </view>
 
-  </view>
+    </view>
