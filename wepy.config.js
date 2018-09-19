@@ -21,12 +21,14 @@ module.exports = {
     modules: ['node_modules']
   },
   compilers: {
+    /*
     less: {
       compress: prod
     },
-    /*sass: {
+    */
+    sass: {
       outputStyle: 'compressed'
-    },*/
+    },
     babel: {
       sourceMap: true,
       presets: [

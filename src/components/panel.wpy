@@ -1,4 +1,4 @@
-<style lang="less">
+<style lang="scss">
   .panel {
     width: 100%;
     margin-top: 20rpx;
