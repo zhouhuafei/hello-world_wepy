@@ -1,9 +1,9 @@
 <style lang="scss">
-    .mylist:odd {
+    .mylist:nth-of-type(odd) {
         color: red;
     }
 
-    .mylist:even {
+    .mylist:nth-of-type(even) {
         color: green;
     }
 </style>
