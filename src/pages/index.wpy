@@ -1,4 +1,6 @@
 <style lang="scss">
+    @import "../scss/config";
+
     .userinfo {
         display: flex;
         flex-direction: column;
@@ -6,8 +8,8 @@
     }
 
     .userinfo-avatar {
-        width: 80rpx;
-        height: 80rpx;
+        width: px2rem(40);
+        height: px2rem(40);
         border-radius: 50%;
     }
 
