@@ -16,12 +16,14 @@ module.exports = {
     settings: {
         'html/html-extensions': ['.html', '.wpy'],
     },
-    // add your custom rules here
+    /*
+    * 官网: http://eslint.org | http://eslint.cn
+    * 配置: http://eslint.org/docs/user-guide/configuring | http://eslint.cn/docs/user-guide/configuring
+    * 0或者"off":关闭规则
+    * 1或者"warn":打开规则,并且作为一个警告(不影响exit code)
+    * 2或者"error":打开规则,并且作为一个错误(exit code将会是1)
+    * */
     'rules': {
-        // allow paren-less arrow functions
-        // 'arrow-parens': 0, // 要求箭头函数的参数使用圆括号
-        // allow async-await
-        // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
         'prefer-const': 2, // 建议使用const
         'no-new': 0, // 禁止new一个实例后不赋值
