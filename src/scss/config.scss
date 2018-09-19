@@ -1,3 +1,15 @@
+/*
+@function px2rem($px) { // 750的设计图
+    @return $px * 1rpx;
+}
+*/
+
 @function px2rem($px) { // 375的设计图
     @return $px * 2rpx;
 }
+
+/*
+@function px2rem($px) { // 320的设计图
+    @return $px * 2.34375rpx;
+}
+*/
