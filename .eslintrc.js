@@ -24,7 +24,6 @@ module.exports = {
     * 2或者"error":打开规则,并且作为一个错误(exit code将会是1)
     * */
     'rules': {
-        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // 生产环境不允许使用debugger
         'prefer-const': 2, // 建议使用const
         'no-new': 0, // 禁止new一个实例后不赋值
         'no-unused-vars': 0, // 禁止未使用过的变量
@@ -33,5 +32,6 @@ module.exports = {
         'comma-dangle': [2, 'always-multiline'], // 要求或禁止使用拖尾逗号
         'space-before-function-paren': 0, // 要求或禁止函数圆括号之前有一个空格
         'generator-star-spacing': 0, // 强制 generator 函数中 * 号周围使用一致的空格
+        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // 生产环境不允许使用debugger
     },
 };
