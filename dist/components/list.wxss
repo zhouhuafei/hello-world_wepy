@@ -1,1 +1,1 @@
-.mylist:odd{color:red}.mylist:even{color:green}
+.mylist:nth-of-type(odd){color:red}.mylist:nth-of-type(even){color:green}

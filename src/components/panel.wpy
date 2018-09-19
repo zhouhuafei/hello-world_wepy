@@ -1,43 +1,44 @@
 <style lang="scss">
-  .panel {
-    width: 100%;
-    margin-top: 20rpx;
-    text-align: left;
-    font-size: 12px;
-    padding-top: 20rpx;
-    padding-left: 50rpx;
-    padding-bottom: 20rpx;
-    border: 1px solid #ccc;
+    @import "../scss/config";
+    .panel {
+        width: 100%;
+        margin-top: px2rem(20);
+        text-align: left;
+        font-size: 12px;
+        padding-top: px2rem(20);
+        padding-left: px2rem(50);
+        padding-bottom: px2rem(20);
+        border: 1px solid #ccc;
 
-    .title {
-      padding-bottom: 20rpx;
-      font-size: 14px;
-      font-weight: bold;
+        .title {
+            padding-bottom: px2rem(20);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .info {
+            padding: px2rem(15);
+        }
+        .testcounter {
+            margin-top: px2rem(15);
+            position: absolute;
+        }
+        .counterview {
+            margin-left: px2rem(120);
+        }
     }
-    .info {
-      padding: 15rpx;
-    }
-    .testcounter {
-      margin-top: 15rpx;
-      position: absolute;
-    }
-    .counterview {
-      margin-left: 120rpx;
-    }
-  }
 </style>
 <template>
-  <view class="panel">
-    <slot name="title">
-      Title
-    </slot>
-    <slot>
-    </slot>
-  </view>
+    <view class="panel">
+        <slot name="title">
+            Title
+        </slot>
+        <slot>
+        </slot>
+    </view>
 </template>
 <script>
-  import wepy from 'wepy'
+    import wepy from 'wepy';
 
-  export default class Panel extends wepy.component {
-  }
+    export default class Panel extends wepy.component {
+    }
 </script>
