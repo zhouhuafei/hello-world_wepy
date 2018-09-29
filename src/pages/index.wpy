@@ -1,6 +1,4 @@
 <style lang="scss">
-    @import "../scss/config";
-
     .userinfo {
         display: flex;
         flex-direction: column;
@@ -32,9 +30,6 @@
             <text class="info">{{mixin}}</text>
             <text class="info">{{mynum}}</text>
             <text class="info">{{now}}</text>
-            <text class="info">{{num}}</text>
-            <text class="info">{{asyncNum}}</text>
-            <text class="info">{{sumNum}}</text>
             <button @tap="plus('a')" size="mini"> +</button>
         </panel>
 
@@ -86,7 +81,6 @@
 
 <script>
     import wepy from 'wepy';
-    import { connect } from 'wepy-redux';
     import Panel from '@/components/panel'; // alias example
     import Counter from 'counter'; // alias example
     import List from '../components/list'; // aliasFields example
@@ -97,21 +91,9 @@
 
     console.log('moduleA ignored: ', moduleA); // => moduleA ignored: {}
 
-    @connect({
-        num(state) {
-            return state.counter.num;
-        },
-        asyncNum(state) {
-            return state.counter.asyncNum;
-        },
-        sumNum(state) {
-            return state.counter.num + state.counter.asyncNum;
-        },
-    })
-
     export default class Index extends wepy.page {
         config = {
-            navigationBarTitleText: '首页',
+            navigationBarTitleText: 'test',
         };
         components = {
             panel: Panel,
@@ -217,7 +199,7 @@
                 while (i--) {
                     wepy.request({
                         url: 'https://www.madcoder.cn/tests/sleep.php?time=1&t=css&c=' + map[i] + '&i=' + i,
-                        success: function(d) {
+                        success: function (d) {
                             self.netrst += d.data + '.';
                             self.$apply();
                         },
@@ -239,7 +221,7 @@
 
         onLoad() {
             const self = this;
-            this.$parent.getUserInfo(function(userInfo) {
+            this.$parent.getUserInfo(function (userInfo) {
                 if (userInfo) {
                     self.userInfo = userInfo;
                 }

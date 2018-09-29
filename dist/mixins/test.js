@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = undefined;
 
@@ -20,43 +20,43 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var testMixin = function (_wepy$mixin) {
-  _inherits(testMixin, _wepy$mixin);
+    _inherits(testMixin, _wepy$mixin);
 
-  function testMixin() {
-    var _ref;
+    function testMixin() {
+        var _ref;
 
-    var _temp, _this, _ret;
+        var _temp, _this, _ret;
 
-    _classCallCheck(this, testMixin);
+        _classCallCheck(this, testMixin);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = testMixin.__proto__ || Object.getPrototypeOf(testMixin)).call.apply(_ref, [this].concat(args))), _this), _this.data = {
+            mixin: 'This is mixin data.'
+        }, _this.methods = {
+            tap: function tap() {
+                this.mixin = 'mixin data was changed';
+                console.log('mixin method tap');
+            }
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = testMixin.__proto__ || Object.getPrototypeOf(testMixin)).call.apply(_ref, [this].concat(args))), _this), _this.data = {
-      mixin: 'This is mixin data.'
-    }, _this.methods = {
-      tap: function tap() {
-        this.mixin = 'mixin data was changed';
-        console.log('mixin method tap');
-      }
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
+    _createClass(testMixin, [{
+        key: 'onShow',
+        value: function onShow() {
+            console.log('mixin onShow');
+        }
+    }, {
+        key: 'onLoad',
+        value: function onLoad() {
+            console.log('mixin onLoad');
+        }
+    }]);
 
-  _createClass(testMixin, [{
-    key: 'onShow',
-    value: function onShow() {
-      console.log('mixin onShow');
-    }
-  }, {
-    key: 'onLoad',
-    value: function onLoad() {
-      console.log('mixin onLoad');
-    }
-  }]);
-
-  return testMixin;
+    return testMixin;
 }(_wepy2.default.mixin);
 
 exports.default = testMixin;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QuanMiXSwibmFtZXMiOlsidGVzdE1peGluIiwiZGF0YSIsIm1peGluIiwibWV0aG9kcyIsInRhcCIsImNvbnNvbGUiLCJsb2ciLCJ3ZXB5Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7Ozs7Ozs7Ozs7O0lBRXFCQSxTOzs7Ozs7Ozs7Ozs7Ozs0TEFDbkJDLEksR0FBTztBQUNMQyxhQUFPO0FBREYsSyxRQUdQQyxPLEdBQVU7QUFDUkMsU0FEUSxpQkFDRDtBQUNMLGFBQUtGLEtBQUwsR0FBYSx3QkFBYjtBQUNBRyxnQkFBUUMsR0FBUixDQUFZLGtCQUFaO0FBQ0Q7QUFKTyxLOzs7Ozs2QkFPRDtBQUNQRCxjQUFRQyxHQUFSLENBQVksY0FBWjtBQUNEOzs7NkJBRVE7QUFDUEQsY0FBUUMsR0FBUixDQUFZLGNBQVo7QUFDRDs7OztFQWpCb0NDLGVBQUtMLEs7O2tCQUF2QkYsUyIsImZpbGUiOiJ0ZXN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHdlcHkgZnJvbSAnd2VweSdcblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgdGVzdE1peGluIGV4dGVuZHMgd2VweS5taXhpbiB7XG4gIGRhdGEgPSB7XG4gICAgbWl4aW46ICdUaGlzIGlzIG1peGluIGRhdGEuJ1xuICB9XG4gIG1ldGhvZHMgPSB7XG4gICAgdGFwICgpIHtcbiAgICAgIHRoaXMubWl4aW4gPSAnbWl4aW4gZGF0YSB3YXMgY2hhbmdlZCdcbiAgICAgIGNvbnNvbGUubG9nKCdtaXhpbiBtZXRob2QgdGFwJylcbiAgICB9XG4gIH1cblxuICBvblNob3coKSB7XG4gICAgY29uc29sZS5sb2coJ21peGluIG9uU2hvdycpXG4gIH1cblxuICBvbkxvYWQoKSB7XG4gICAgY29uc29sZS5sb2coJ21peGluIG9uTG9hZCcpXG4gIH1cbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QuanMiXSwibmFtZXMiOlsidGVzdE1peGluIiwiZGF0YSIsIm1peGluIiwibWV0aG9kcyIsInRhcCIsImNvbnNvbGUiLCJsb2ciLCJ3ZXB5Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7Ozs7Ozs7Ozs7O0lBRXFCQSxTOzs7Ozs7Ozs7Ozs7OztnTUFDakJDLEksR0FBTztBQUNIQyxtQkFBTztBQURKLFMsUUFHUEMsTyxHQUFVO0FBQ05DLGVBRE0saUJBQ0E7QUFDRixxQkFBS0YsS0FBTCxHQUFhLHdCQUFiO0FBQ0FHLHdCQUFRQyxHQUFSLENBQVksa0JBQVo7QUFDSDtBQUpLLFM7Ozs7O2lDQU9EO0FBQ0xELG9CQUFRQyxHQUFSLENBQVksY0FBWjtBQUNIOzs7aUNBRVE7QUFDTEQsb0JBQVFDLEdBQVIsQ0FBWSxjQUFaO0FBQ0g7Ozs7RUFqQmtDQyxlQUFLTCxLOztrQkFBdkJGLFMiLCJmaWxlIjoidGVzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB3ZXB5IGZyb20gJ3dlcHknO1xuXG5leHBvcnQgZGVmYXVsdCBjbGFzcyB0ZXN0TWl4aW4gZXh0ZW5kcyB3ZXB5Lm1peGluIHtcbiAgICBkYXRhID0ge1xuICAgICAgICBtaXhpbjogJ1RoaXMgaXMgbWl4aW4gZGF0YS4nLFxuICAgIH07XG4gICAgbWV0aG9kcyA9IHtcbiAgICAgICAgdGFwKCkge1xuICAgICAgICAgICAgdGhpcy5taXhpbiA9ICdtaXhpbiBkYXRhIHdhcyBjaGFuZ2VkJztcbiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdtaXhpbiBtZXRob2QgdGFwJyk7XG4gICAgICAgIH0sXG4gICAgfTtcblxuICAgIG9uU2hvdygpIHtcbiAgICAgICAgY29uc29sZS5sb2coJ21peGluIG9uU2hvdycpO1xuICAgIH1cblxuICAgIG9uTG9hZCgpIHtcbiAgICAgICAgY29uc29sZS5sb2coJ21peGluIG9uTG9hZCcpO1xuICAgIH1cbn1cbiJdfQ==

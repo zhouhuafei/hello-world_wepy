@@ -1,15 +1,13 @@
 {
-	"description": "项目配置文件。",
-	"setting": {
-		"urlCheck": false,
-		"es6": false,
-		"postcss": false,
-		"minified": false,
-		"newFeature": true
-	},
-	"compileType": "miniprogram",
-	"appid": "wx464947edc7d048ae",
-	"projectname": "suibianxiexie_wepy",
-	"miniprogramRoot": "dist/",
-	"condition": {}
+  "description": "项目配置文件",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram",
+  "appid": "wx464947edc7d048ae",
+  "projectname": "y",
+  "miniprogramRoot": "./dist"
 }
