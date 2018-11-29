@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"appid": "wx464947edc7d048ae",
-	"projectname": "y",
+	"projectname": "hello-world_wepy",
 	"miniprogramRoot": "dist/",
 	"condition": {}
 }
